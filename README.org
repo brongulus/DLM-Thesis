@@ -19,8 +19,7 @@
 #+BEGIN_EXPORT latex
 \begin{titlepage}
     \begin{center}
-        \vspace*{1cm}
-
+        %\vspace*{1cm}
         \Large
         \textbf{A Comparative Study of Dynamic Linear Models and ARIMA Models for Renewable Energy Forecasting}
 
@@ -607,7 +606,7 @@ All three models fail the Shapiro-Wilk test and it is supported by the Q-Q plots
 #+ATTR_LATEX: :width 0.8\linewidth
 [[./images/jafrabad/qq.png]]
 
-* References
+* Bibliography
 1. Petris, G., Petrone, S., & Campagnoli, P. (2009). Dynamic Linear Models with R. Springer Science & Business Media.
 2. West, M., & Harrison, J. (1997). Bayesian forecasting and dynamic models (2nd ed.). Springer.
 3. Hyndman, R.J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3.
