@@ -1,15 +1,19 @@
-#+TITLE: Kalman Filter Linear Regression for Energy Prediction
+#+TITLE: A Comparative Study of Dynamic Linear Models and ARIMA Models for Renewable Energy Forecasting
 #+OPTIONS: title:nil author:nil date:nil
-# #+OPTIONS: num:nil
+#+OPTIONS: toc:nil
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [a4paper,12pt]
 #+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \usepackage{unicode-math}
 #+LATEX_HEADER: \usepackage[margin=1.2in]{geometry}
 #+LATEX_HEADER: \renewcommand{\baselinestretch}{1.25}
 #+LATEX_HEADER: \setlength{\abovedisplayskip}{7pt}
 #+LATEX_HEADER: \setlength{\belowdisplayskip}{7pt}
 #+LATEX_HEADER: \setlength{\abovedisplayshortskip}{7pt}
 #+LATEX_HEADER: \setlength{\belowdisplayshortskip}{7pt}
+#+LATEX_HEADER: \setmainfont{Libertinus Serif}
+#+LATEX_HEADER: \setmathfont{Libertinus Math}
 
 # Cover Page
 #+BEGIN_EXPORT latex
@@ -78,6 +82,11 @@ Date:\hspace*{\fill}Dr. Sumanta Pasari\\
 \hspace*{\fill}BITS Pilani, Pilani Campus\\
 \pagebreak
 #+END_EXPORT
+
+# TOC
+#+begin_export latex
+\tableofcontents \clearpage
+#+end_export
 
 * Abstract
 Short-term energy forecasting influences energy plants operations a lot and it can also have environmental impact. This report looks into studying Dynamic Linear Models for assessing solar irradiance and wind speed values and estimating them. The Global Horizontal Irradiance (GHI) data for Bhadla Solar Park (Gujarat) from 2001 to 2021 is considered for the analysis. For wind speed, data from numerous locations over India is looked at. The analysis is done with short-term(daily), mid-term(weekly) and long-term(monthly) data. The stationarity of the data is verified using ADF test and a dynamic linear regressive framework with seasonal terms is proposed to model the GHI values. The parameters for the model are obtained via Kalman Filter. The predictions are compared with ARIMA and Seasonal ARIMA models. The residuals for the predicted values are investigated using Shapiro-Wilk test and Q-Q plots.
