@@ -341,7 +341,7 @@ The data for Tiruvananthpuram for wind speed is of 10 years for monthly and week
 *** Monthly
 Looking at the =decomposition= of the monthly resampled data, we sense a clear seasonality in the data with a small spike at the beginning of each year followed by a large one.
 
-#+ATTR_LATEX: :width 1.00\textwidth :caption Monthly GHI Decomposition
+#+ATTR_LATEX: :width 1.00\textwidth :caption Monthly Wind Speed Decomposition
 [[./images/tiru/monthlyDecomp.png]]
 
 Upon constructing the dynamic regressive and seasonal DLM models, their decomposed components are then fitted, they show similar characteristics to the decomposed variations.
@@ -372,9 +372,9 @@ The Q-Q plots for all the models don't closely follow the ideal line, maybe due 
 \pagebreak
 
 *** Weekly
-Now let's take a look at the =decomposition= of the weekly GHI data, again the pattern repeats, seasonal data with large and small spikes and no clear trend.
+Now let's take a look at the =decomposition= of the weekly wind speed data, again the pattern repeats, seasonal data with large and small spikes and no clear trend.
 
-#+ATTR_LATEX: :width 1.0\textwidth :caption Weekly GHI Decomposition
+#+ATTR_LATEX: :width 1.0\textwidth :caption Weekly Wind Speed Decomposition
 [[./images/tiru/weeklyDecomp.png]]
 
 The decomposed components for the Regressive and Seasonal DLM models are fitted, they show similar trend and seasonal variations.
@@ -406,9 +406,9 @@ The Q-Q plots reinforce the same suggestion, for all the models they follow the 
 
 \pagebreak
 *** Daily
-Looking at the =decomposition= of the daily GHI data, there's not a lot one can extract from it except maybe the fact that there's periodic seasonallity.
+Looking at the =decomposition= of the daily wind-speed data, there's not a lot one can extract from it except maybe the fact that there's periodic seasonallity.
 
-#+ATTR_LATEX: :width 1.0\textwidth :caption Weekly GHI Decomposition
+#+ATTR_LATEX: :width 1.0\textwidth :caption Daily Wind Speed Decomposition
 [[./images/tiru/dailyDecomp.png]]
 
 Upon constructing the dynamic regressive and seasonal DLM models, their decomposed components are then fitted.
